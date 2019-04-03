@@ -1,0 +1,21 @@
+{
+  "name": "ele-language",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "jQuery": "^1.7.4",
+    "xlsx": "^0.14.2"
+  },
+  "devDependencies": {
+    "electron": "^4.1.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "package-win": "electron-packager . 'excel2json' --platform=win32 --arch=x64 --icon=icon.ico --out=./out --asar --app-version=0.0.1 --overwrite",
+    "package-mac": "electron-packager . 'excel2json' --platform=mas --arch=x64 --icon=icon.ico --out=./out --asar --app-version=0.0.1 --overwrite"
+  },
+  "author": "",
+  "license": "ISC"
+}
